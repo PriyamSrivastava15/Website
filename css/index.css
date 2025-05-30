@@ -1,0 +1,66 @@
+*{
+    font-family: 'Cooper Black', sans-serif;
+    color: white;                               
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+.container-fluid{
+    height: 100% !important;
+}
+
+h1{
+    font-size: 7rem;
+}
+
+h2{
+    font-size: 4.8rem;
+    margin-top: -20px;
+}
+
+@keyframes beat {
+  0%, 100% {
+    transform: scale(1);
+  }
+
+  20% {
+    transform: scale(1.1);
+  }
+
+  40%{
+    transform: scale(1);
+  }
+
+  60%{
+    transform: scale(1.1);
+  }
+
+  80%{
+    transform: scale(1);
+  }
+}
+
+
+.heart i{
+    color: rgb(255, 0, 0);
+    font-size: 6rem;
+    transition: transform 0.3s ease, color 0.5s ease;
+}
+
+
+.heart i.zoomed{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    color: rgb(128, 31, 31);   
+    transform: translate(-50%, -50%) scale(50);
+    z-index: 9999;
+    transition: transform 1s ease, color 1s ease;
+}
+
+.beat{
+    animation: beat 1.25s infinite;
+}

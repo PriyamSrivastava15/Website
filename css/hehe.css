@@ -1,0 +1,109 @@
+:root {
+  --bg-color: #FD3B71;         /* Romantic Pink */
+  --card-bg: #fcccd9;          /* Soft Blush */
+  --primary-text: #C9184A;     /* Deep Rose */
+  --secondary-text: #FFB3C6;   /* Pastel Coral */
+  --white: #FFFFFF;            /* Clean White */
+  --header-cursive:"Great Vibes", cursive;
+  --header-serif:'Cooper Black', sans-serif;
+  --secondary-text-writing:"Poppins", sans-serif;
+}
+
+body{
+    background-color: #b00032;
+}
+
+
+.photo-container{
+    height: 2100px;
+    border: 10px solid #8a0027;
+    border-radius: 30px;
+    background-color: var(--bg-color)
+}
+
+.photo-section{
+    height: 2100px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 23% 23% 23% 23%;
+  grid-template-rows: repeat(6, 300px);
+  gap: 2%;
+  grid-template-areas: 
+    "photo1 photo1 item1 item1"
+    "photo1 photo1 photo2 photo2"
+    "item2 item2 photo2 photo2"
+    "photo3 photo3 item3 item3"
+    "photo3 photo3 photo4 photo4"
+    "item4 item4 photo4 photo4";
+}
+
+.item{
+    border: 10px solid #8a0027;
+    border-radius: 15px;
+    box-shadow: 0 15px 18px var(--primary-text);
+    background-color: var(--card-bg);
+}
+
+.photo1{
+    grid-area: photo1;
+    background-image: url("/assets/diwali2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.photo2{
+    grid-area: photo2;
+    background-image: url("/assets/godi.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.photo3{
+    grid-area: photo3;
+    background-image: url("/assets/fest.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.photo4{
+    grid-area: photo4;
+    background-image: url("/assets/fresher.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.item1{
+    grid-area: item1;
+}
+
+.item2{
+    grid-area: item2;
+}
+
+.item3{
+    grid-area: item3;
+}
+
+.item4{
+    grid-area: item4;
+}
+
+.card-heading{
+    font-family: var(--header-cursive);
+    font-weight: 500;
+    font-size: 3.25rem;
+    color: var(--primary-text);
+}
+
+.card-text{
+    font-family: var(--secondary-text-writing);
+    font-size: 1rem;
+    color: var(--primary-text);
+}
+

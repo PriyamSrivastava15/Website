@@ -1,0 +1,48 @@
+:root {
+  --color-background: rgb(128, 31, 31);
+  --color-primary: #fc4964;
+  --color-primary-light: #ff6779;
+  --color-secondary: #FFC1CC;
+  --color-accent: #FFD700;
+  --color-text: #FFFFFF;
+  --color-highlight: #8B0000;
+  --header-cursive:"Great Vibes", cursive;
+  --header-serif:'Cooper Black', sans-serif;
+  --secondary-text:"Poppins", sans-serif;
+}
+
+body{
+    background-color: var(--color-background);   
+}
+
+.image-container{
+    border: 12px solid #530404;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.image-container img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.greet-container{
+    background-color: var(--color-secondary);
+    height: 98%;
+    width: 98%;
+    border: 8px solid #530404;
+    border-radius: 20px;
+}
+
+.greet-heading{
+    color: var(--color-primary);
+    font-family: var(--header-cursive);
+    font-size: 5rem;
+    font-weight: 550;
+}
+
+.greet-text{
+    color: var(--color-primary-light);
+    font-size: 1.5rem;
+    font-family: var(--secondary-text);
+}
